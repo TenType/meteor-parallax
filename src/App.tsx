@@ -14,6 +14,21 @@ export default function App() {
   return (
     <Parallax pages={5}>
       <ParallaxLayer
+        offset={0.2}
+        speed={0.5}
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          zIndex: 1,
+        }}
+      >
+        <div>
+          <h2>Meteor Parallax</h2>
+          <p>Scroll down...</p>
+        </div>
+      </ParallaxLayer>
+
+      <ParallaxLayer
         sticky={{ start: 0.5, end: 3.5 }}
         style={{
           display: 'flex',
